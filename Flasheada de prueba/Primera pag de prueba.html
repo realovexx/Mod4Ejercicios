@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Titulo pa la pestaña de pagina. El salto de linea no sirve para esto
+    </title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+</html>
+
+<body>
+    <h1 class="titulo1">El titulo interno de la pag no va en title</h1> <!--Los H son para armar estructura. este para lo principal-->
+    <br>
+    <h2>El cuerpo <i>en italica,</i> de la pagina <!--Este es para contenido secundario-->
+        <br>
+        <h3><strong>Con salto de linea</strong></h3> <!--y de este en adelante, para subdivisiones internas-->
+        <br>
+        <br>
+        y con dos saltos de linea <u>y subrayado</u><!--Asi comento cosas-->
+    </h2>
+    <h2>
+        <p align="right">
+            este texto tiene que aparecer a la <strong>derecha</strong>
+        </p>
+        <br>
+        <p align="left">
+            este texto tiene q aparecer a la <strong>izquierda</strong>
+        </p>
+    </h2>
+    <br>
+    <p align="center">
+        y este tiene q aparecer en <strong>el medio</strong>
+    </p>
+    <h3>Otra <i>subestructura</i> mas chica, para ver listas</h3>
+    <br>
+    <br>
+    <p>No me acuerdo para q es la A(era para links, asiq lo cambie a P), pero esto va a ser una lista sin orden</p>
+    <br>
+    <ul type="square"> <!--esto genera bullets, en este caso, cuadraditos-->
+        <li>un elemento de lista</li>
+        <li>otro elemento de lista</li>
+        <li>tercer elemento de lista</li>
+        <li>y este solo para avisar q es sin ordenar</li>
+    </ul>
+    <br>
+    <p>no se si la q sigue sera la ordenada (si, lo es, pero no significa lo q creia)</p>
+    <ol type="I"><!--servira ponerle q los bullets sean triangulos? no, no sirve. solo a, A, 1, i e I-->
+        <li>4 bueno, un elemento</li>
+        <li type="circle">7 elemento random</li>
+        <li type="square">2 elemento con cuadradito</li>
+        <li type="1">5 ni idea si esto funciona</li>
+        <!--no te ordena la lista, sino que le da un numero de orden en vez de bullet-->
+    </ol>
+    <p>Y si quiero arrancar la lista de numeracion desde otro lado:</p>
+    <ol type="i" start="10">
+        <li> Elemento x </li>
+        <li> Elemento xi </li>
+    </ol>
+
+    <a href="https://www.youtube.com/watch?v=rqkBPTKWS68&t=682s&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+        target="_blank">rickroll?</a>
+    <!--target="_blank" es para abrir el link en pestaña nueva-->
+    <br>
+    <p>Ejemplo de lista <u>anidada</u></p>
+    <ul>
+        <li>elemento lista principal </li>
+        <ol>
+            <li>elemento sublista 1 </li>
+            <li>otro elemento sublista 1 </li>
+        </ol>
+        <li>segundo elemento lista principal </li>
+        <ol>
+            <li>elemento sublista 2 </li>
+            <li>otro elemento sublista 2</li>
+        </ol>
+    </ul>
+    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+        <button type="button" class="btn btn-danger btn-fst">
+            <u>un</u><i> boton </i><strong>random</strong>
+        </button>
+    </a>
+    <br>
+    <p>Enlace:</p>
+    <br>
+    <a href="Ej1html.html">De aca va al ej1 de teoria</a>
+    <br>
+    <p>Ahora un dibujito</p>
+    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+        <img src="OvExX.png" alt="noloserick"> <!--el alt es para darle el subtexto a la imagen por si no carga-->
+    </a>
+    <br>
+    <p>Ahora un ejemplo de celdas</p>
+    <table>
+        <tr>
+            <th>Gata negra</th>
+            <th>Gata calico</th>
+        </tr>
+        <tr>
+            <td>Alita</td>
+            <td>Pimienta</td>
+        </tr>
+        <tr>
+            <td>Collar violeta</td>
+            <td>Collar rosa</td>
+        </tr>
+    </table>
+    <br>
+    <p>Ejemplo de formulario</p>
+    <br>
+    <form action="mailto: televicio.n.rock@gmail.com" method="Post" enctype="multipart/form-data">
+        <label for="input de texto">un texto corto</label>
+        <input type="text" name="input de texto" size="20" maxlength="144" value="escribite algo"> <!--El nombre del elemento del formulario es de gran importancia para poder identificarlo en nuestro
+            programa de procesamiento (Java). -->
+        <br>
+        <label for="input de numero">un numero</label>
+        <input type="number" name="input de numero" placeholder="100">
+        <br>
+        <label for="input de fecha">una fecha</label>
+        <input type="date" name="input de fecha">
+        <br>
+        <label for="input de email">un mail</label>
+        <input type="email" name="input de email">
+        <br>
+        <label for="input oculto">este no se ve</label>
+        <input type="password" name="input oculto">
+        <br>
+        <label for="comentariolargo">un texto mas largo</label><br>
+        <textarea name="comentariolargo" rows="10" cols="80"
+        placeoholder="Mandale mecha..."></textarea>
+        <br>
+        <label for="instrumentos">Elegite algo</label><br>
+        <select name="instrumentos">
+            <option>Bateria</option>
+            <option>Bajo</option>
+            <option>Guitarra</option>
+            <option>Teclados</option>
+            <option>Otro...</option>
+        </select>
+        <br>
+        <p>Obvio q elegiste bateria, q es lo mas te gusta?</p>
+        <select name="delkit" size="3" multiple>
+            <option>Platillo/s</option>
+            <option>Redoblante/s</option>
+            <option>Bombo/s</option>
+            <option>Toms/s</option>
+            <option>ePads</option>
+            <option>Pandereta</option>
+            <option selected>More Cowbell!</option>
+        </select>
+        <p>bueno, ahora con cuerdas</p>
+        <br>
+        <div style="background-color: blueviolet; font-weight: bold; color: pink">
+        <input type="radio" name="cuerdas" value="1">Amps
+        <br>
+        <input type="radio" name="cuerdas" value="2">Pedals
+        <br>
+        <input type="radio" name="cuerdas" value="3">PC Interfaces
+        <br>
+        <input type="radio" name="cuerdas" value="4">String Instrument
+        </div>
+        <br>
+        <br>
+        <p>Este puede cliquear el texto tambien. Cual preferis?</p>
+        <br>
+        <input type="radio" id="electrico" name="choice" value="1">
+        <label for="electrico">Guitarra electrica</label>
+        <br>
+        <input type="radio" id="acustico" name="choice" value="2">
+        <label for="acustico">Guitarra acústica</label>
+        <br>
+        <input type="radio" id="aire" name="choice" value="3">
+        <label for="aire">Air Guitar!</label>
+        <br>
+        <br>
+        <p>cajas de <span style="color: red">validacion</span>, ayudas a desarmar y mover la bata?</p><br>
+        <input type="checkbox" name="siono" value="1">Obvio, si me la re banco.
+        <br>
+        <input type="checkbox" name="noosi" value="2">Nah, soy alto pussy.
+        <br>
+        <button type="hidden" name="desdelejos" value="noseve"></button><!--un boton invisible pa agregar info al form (no se porq se ve igual)-->
+        <button type="submit">Mandalo noma</button><br>
+        <button type="reset">Nah, borra. Va de vuelta</button><br>
+        <a href="https://youtu.be/UZloHBgEE4o"target="_blank"><button type="button">este no hace nada... o si?</button></a><BR>
+    </form>
+    <br>
+    <p>Despues hay q probar bootstrap</p>
+    <br>
+</body>

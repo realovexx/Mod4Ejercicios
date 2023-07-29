@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0}
+h1{text-decoration: line-through; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: beige; font-size: large;}
+h2{text-decoration: dotted; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:antiquewhite; font-size: medium;}
+h3{text-decoration: overline; font-family: Arial, Helvetica, sans-serif; color:cornsilk; font-size: medium;}
+p{font-size: small; font-family: 'Courier New', Courier, monospace; font-weight: lighter; color:darkkhaki; text-align: justify;}
+a{font-size: larger; font-weight: lighter; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+body{background-color: #292963; text-indent: 1cm; color:aquamarine; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: lighter;}
+button{background-color: blueviolet; color:rgb(71, 20, 20); font-family: cursive;}
+input{background-color:#6060a0; color:antiquewhite}
+textarea{background-color:#6060a0; color:antiquewhite}
+table, div{border: 2px solid blue}
+select option{background-color: #444468; color:beige}
+.titulo1{font-size: xx-large; outline-style: double; outline-color: darkslategrey; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:coral}
+.titulo2{font-size: x-large; color: chocolate;}
+#electrico{background-color: crimson;font-family: Georgia, 'Times New Roman', Times, serif;}
+#acustico{background-color: crimson; font-weight: 900;}
+#aire{background-color: crimson; font-style: oblique;}
+a:link {color: red;}
+a:visited {color: green;}
+a:hover {color: pink;}
+a:active {color: blue;}
