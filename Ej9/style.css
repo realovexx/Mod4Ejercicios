@@ -1,0 +1,19 @@
+h1{color:darkslategray}
+strong{color:red}
+.destacado{color:orange}
+h2{color:blue}
+p{color:black}
+thead{color:orange}
+tfoot{color:red}
+tbody th{color:red}
+tbody td{color:green}
+tbody td strong{color:orange}
+p .especial{color:purple}
+em{color:blue}
+a{color:red}
+table, td, tr{border: 1px solid black; border-collapse: collapse;}
+tfoot tr th{border: 1px solid black; border-collapse: collapse;}
+thead tr th{border: 1px solid black; border-collapse: collapse;}
+#especial{color:pink}
+#linkverde{color: darkgreen}
+#adicional p{color:olive}
