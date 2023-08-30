@@ -10,9 +10,9 @@ export class Main extends Component {
     }
 
     componentDidMount() {
-        RickAndMortyService.getAllCharacters()
-       .then((data) => this.setState({chars: data.results}))
-        .catch((error) => console.log(error));
+       // RickAndMortyService.getAllCharacters()
+       //.then((data) => this.setState({chars: data.results}))
+       // .catch((error) => console.log(error));
     }
 
     render() {
@@ -31,7 +31,7 @@ export class Main extends Component {
                             </div>
                         </div>
                     </section>
-                    <Cards chars={this.state.chars} />
+                    <Cards />
                 </main>
             </div>
         )
