@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Footer = () => {
    const [clicks, setClicks] = useState(0);
    const year = new Date().getFullYear();
-   const companyName = "TuVieja";
+   const companyName = "TuVieja.SRL";
    const handleClick = () => {
     setClicks(clicks + 1);
     console.log("mimos a pimi");
@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className="container">
             <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p className="col-md-4 mb-0 text-muted">© {year} {companyName}, SRL. Mimos a Pimienta: {clicks}</p>
+                <p className="col-md-4 mb-0 text-muted">© {year} {companyName} * Mimos a Pimienta: {clicks}</p>
 
                 <span 
                     className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"

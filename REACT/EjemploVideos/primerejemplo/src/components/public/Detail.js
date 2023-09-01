@@ -12,7 +12,9 @@ const Detail = () => {
         console.log(pathname);
         RickAndMortyService.getAllCharacterById(id)
             .then((data) => setChar(data))
-    }, [])
+    }, [id])
+
+    console.log(char);
 
     const detailCard = {
         width: '80%',

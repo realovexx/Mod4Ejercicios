@@ -1,25 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useUserForm } from '../../hooks/Custom.hooks'
-import { useState } from 'react';
-import { useEffect } from 'react';
-
 
 const UserForm = () => {
   const { form, setForm, handleChanges } = useUserForm();
   const [areEquals, setAreEquals] = useState(true);
   const [passwordConfirmation, setPasswordConfirmation] = useState();
+  const [pass,setPass] = useState(true);
+
+  const validPass = () => {
+    const {password} = form;
+    if (password !== undefined){
+      setPass(false)
+    }
+    return pass
+  }
+
   const handlePasswordConfirmation = (e) => {
     setPasswordConfirmation(e.target.value);
   }
+
   useEffect(() => {
     const { password } = form;
     setAreEquals(password === passwordConfirmation);
-  }, [passwordConfirmation])
+    validPass()
+  }, [passwordConfirmation, pass])
+
   const handleSubmit = (e) => {
     e.preventDefault();
+   {/* UserService.save(form);*/}
     console.log(form);
-
   }
+
   return (
     <div classNale="w-25 mx-auto mt-5">
       <h4 className="mb-3">Humano Registrate!</h4>
@@ -32,6 +43,7 @@ const UserForm = () => {
             <input
               type="email"
               className="form-control"
+              id="email"
               placeholder="you@example.com"
               name="email"
               onChange={handleChanges}
@@ -44,9 +56,11 @@ const UserForm = () => {
             <input
               type="password"
               className="form-control"
+              id="address"
               placeholder="Clave"
               name="password"
               onChange={handleChanges}
+              required
             />
           </div>
           <div className="col-12">
@@ -56,6 +70,7 @@ const UserForm = () => {
             <input
               type="password"
               className="form-control"
+              id="password2"
               placeholder="Repetir Clave"
               onChange={handlePasswordConfirmation}
             />
@@ -67,7 +82,7 @@ const UserForm = () => {
           )}
           <hr className="my-4" />
           <button
-            disabled={!areEquals}
+            disabled={!areEquals || pass}
             className="w-100 btn btn-primary btn-lg"
             type="submit"
             onClick={handleSubmit}

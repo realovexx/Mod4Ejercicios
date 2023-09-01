@@ -9,7 +9,8 @@ const Cards = () => {
         RickAndMortyService.getAllCharacters()
        .then((data) => setChars(data.results))
        .catch((error) => console.log(error));
-    }, [chars])
+    }, [])
+    console.log(chars);
     const cardList = chars.map((m)=> <Card char={m} key={m.id}/>)
     return (
         <div>
