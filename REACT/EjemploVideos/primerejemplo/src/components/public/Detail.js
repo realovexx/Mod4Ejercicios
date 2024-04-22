@@ -3,7 +3,6 @@ import { Link, useLocation, useParams } from 'react-router-dom'
 import RickAndMortyService from '../../services/RickAndMorty.service';
 
 const Detail = () => {
-
     const [char, setChar] = useState({});
     const { id } = useParams();
     const { pathname } = useLocation();
